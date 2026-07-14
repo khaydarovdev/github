@@ -59,7 +59,7 @@ target_files = ["daily_log.txt", "progress.md", "inspiration.txt"]
 
 # Time setup
 ist = pytz.timezone('Asia/Tashkent')
-now = datetime.datetime.now(tz)
+now = datetime.datetime.now(ist)
 weekday = now.weekday()  # Monday = 0, Sunday = 6
 date_key = now.strftime('%Y-%m-%d')
 timestamp = now.strftime('%Y-%m-%d %I:%M:%S %p')
